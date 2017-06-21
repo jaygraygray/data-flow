@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|PT+Mono|Poiret+One&subset=cyrillic');
+
+h1 {
+  font-family: 'Poiret One';
+}
+
+h2 {
+ font-family: 'PT Mono';
+}
+
+p {
+  font-family: 'Raleway';
+  line-height: 32px;
+  margin-bottom: 34px;
+}
