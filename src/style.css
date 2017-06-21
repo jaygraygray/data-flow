@@ -13,3 +13,10 @@ p {
   line-height: 32px;
   margin-bottom: 34px;
 }
+
+.tip {
+      background: '#fff' !important;
+      border: '1px solid black' !important;
+      color: '#000' !important;
+      font-size: '30px' !important;
+}

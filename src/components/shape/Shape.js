@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import ReactTooltip from 'react-tooltip'
 
-import ShapeStyle from '../../ShapeStyles0'
+import '../../style.css'
 
 class Shape extends Component {
   
@@ -11,23 +11,21 @@ class Shape extends Component {
     const {
       children,
       tooltip,
-      style,
-      step
+      type,
+      ShapeStyle
     } = this.props
+    
 
-    // use this to set what Step the shape will be used in
-    //const stylePath = `./
-    console.log(ShapeStyle)
     return (
       <div data-tip data-for={ children }
-           style={ShapeStyle.store}>
+           style={ShapeStyle[type]}>
 
         <h1 style={ShapeStyle.h1}>{children}</h1>
 
-
-
-        <ReactTooltip id={ children }>
-          <span>{ tooltip }</span>
+        <span data-tip={tooltip}>{ children }</span>
+      
+        <ReactTooltip class="tip" id={ children }>
+          
         </ReactTooltip>
       </div>
     );
@@ -37,12 +35,3 @@ class Shape extends Component {
 
 export default Shape;
 
-/*
-
-<Shape css={filepath}
-      hoverModal={dataForModal}
-      clickModal={dataForClickModal}> Store 
-</Shape>
-
-
-*/
