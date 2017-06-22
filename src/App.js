@@ -7,10 +7,12 @@ import Store from './components/store/Store';
 import Shape from './components/shape/Shape';
 
 import Step0 from './steps/zero'
+import { Tooltip, OverlayTrigger } from 'react-bootstrap'
 
 class App extends Component {
 
   render() {
+
     return (
       <div>
 
@@ -27,13 +29,16 @@ class App extends Component {
 
 
       <div className="text">
+        
         <h1>Getting Started</h1>
+          
         <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
         <p>In the next section, we will explore how this data flow works with a React application, then how
           this flow is modified when requesting data from an API.
         </p>
         <p>To begin, we'll cover the three main aspects Redux adds to an app: the <b>store</b>,
         <b>reducers</b>, and <b>actions</b>.</p>
+        <h1>Test Stuff</h1>
       </div>
 
 {/*

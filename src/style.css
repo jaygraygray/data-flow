@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|PT+Mono|Poiret+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700|Raleway|PT+Mono|Poiret+One&subset=cyrillic');
 
 h1 {
   font-family: 'Poiret One';
@@ -14,9 +14,6 @@ p {
   margin-bottom: 34px;
 }
 
-.tip {
-      background: '#fff' !important;
-      border: '1px solid black' !important;
-      color: '#000' !important;
-      font-size: '30px' !important;
+.popover-title {
+  font-weight: '700' !important;
 }

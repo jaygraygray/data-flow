@@ -5,6 +5,7 @@
   "dependencies": {
     "aphrodite": "^1.2.1",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1",
     "react-tooltip": "^3.3.0"
   },

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ReactTooltip from 'react-tooltip'
+import { Popover, OverlayTrigger } from 'react-bootstrap'
 
 import '../../style.css'
 
@@ -12,22 +12,28 @@ class Shape extends Component {
       children,
       tooltip,
       type,
-      ShapeStyle
+      ShapeStyle,
+      offsetLeft,
+      offsetTop,
+      title,
+      TipStyle
     } = this.props
     
+    const tooltipText = (
+      <Popover style={TipStyle} id="tooltip" title={title}>{tooltip}</Popover>
+    )
+
 
     return (
-      <div data-tip data-for={ children }
-           style={ShapeStyle[type]}>
 
-        <h1 style={ShapeStyle.h1}>{children}</h1>
 
-        <span data-tip={tooltip}>{ children }</span>
-      
-        <ReactTooltip class="tip" id={ children }>
-          
-        </ReactTooltip>
-      </div>
+      <OverlayTrigger rootClose={true} trigger="click" placement="left" overlay={tooltipText}>
+        <div style={ShapeStyle[type]}>
+          <h1 style={ShapeStyle.h1}>{children}</h1>
+        </div>
+      </OverlayTrigger>     
+
+ 
     );
   }
 }
