@@ -3,6 +3,7 @@
 html,body{
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 * {
@@ -51,12 +52,14 @@ em {
 }
 
 .title-container h1 {
+    padding-left: 24px;
     position: absolute;
     font-size: 3.7rem;
-transition: all .2s;
-  background: #2C3543;
-  color: white;
-  text-shadow: 0 1px 0 #ccc,
+    transition: all .2s;
+    background: #2C3543;
+    color: white;
+    margin-right: 12px;
+    text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
                0 6px 1px rgba(0,0,0,.1),
@@ -143,17 +146,36 @@ transition: all .2s;
     border-color: rgba(44, 53, 67, 1);
     border-style: solid;
     color: #fff;
-    background-color: rgb(52, 62, 78);
+    background-color: #58a8a4;
     display: flex;
     text-align: center;
     align-items: center;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    position: relative;
+    transition: all .2s;
+}
+
+.section:hover {
+    transition: all .2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.0) inset;
+    background: #63a9a5;
+    padding-top: 3px;
 }
 
 
+.section-text {
+    z-index: 2;
+    text-shadow: 1px 1px 1px #000;
+}
 
-
-
-
+.num {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    font-size: 9rem;
+    color: #6fbfbb;
+}
 
 .container {
     width: 920px;
@@ -236,10 +258,12 @@ transition: all .2s;
 .effect7
 {
   	position:relative;
-    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.5) inset;
+       -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 0, 0, 0.5) inset;
 }
+
+
 .effect7:before, .effect7:after
 {
 	content:"";
