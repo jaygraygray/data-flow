@@ -10,12 +10,12 @@ html,body{
     font-size: 16px;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Poiret One';
 }
 
 h2 {
- font-family: 'PT Mono';
+ font-size: 2.4rem;
 }
 
 p {
@@ -47,16 +47,13 @@ em {
 }
 
 .title-container {
-    width: 100%;
     text-align: center;
+    margin-bottom: 48px;
 }
 
-.title-container h1 {
-    padding-left: 24px;
-    position: absolute;
+.title {
     font-size: 3.7rem;
-    transition: all .2s;
-    background: #2C3543;
+
     color: white;
     margin-right: 12px;
     text-shadow: 0 1px 0 #ccc,
@@ -71,21 +68,15 @@ em {
                0 20px 20px rgba(0,0,0,.15);
 }
 
-
-
 .text {
     text-align: left;
-    margin-top: 84px;
     padding: 0px 24px 0 3px;
     overflow-y: auto;
     z-index: 1;
-    height: 85vh;
+    height: 100vh;
 }
 
-.text h1 {
-    font-size: 2.5rem;
-    text-align: center;
-}
+
 
 .scroll::-webkit-scrollbar-track
 {
