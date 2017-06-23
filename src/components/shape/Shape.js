@@ -33,7 +33,6 @@ class Shape extends Component {
         </div>
       </OverlayTrigger>     
 
- 
     );
   }
 }
