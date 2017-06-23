@@ -16,18 +16,9 @@ class App extends Component {
     return (
       <div>
 
-      
-
-
-        <div className="title-container">
-          <div className="title"><h1>Data Flow with Redux</h1></div>
-        </div>
-        
-
-    <div className="container"> 
       <Step0 />
 
-
+{/*
       <div className="text">
         
         <h1>Getting Started</h1>
@@ -39,7 +30,7 @@ class App extends Component {
         <p>To begin, we'll cover the three main aspects Redux adds to an app: the <b>store</b>,
         <b>reducers</b>, and <b>actions</b>.</p>
         <h1>Test Stuff</h1>
-      </div>
+      </div>*/}
 
 {/*
       <div className="content">
@@ -66,7 +57,6 @@ class App extends Component {
 
 
 
-    </div>
     );
   }
 }

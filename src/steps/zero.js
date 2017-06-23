@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Shape from '../components/shape/Shape'
 
+import Instructions from '../components/instruction/Instruction'
 
 class Step1 extends Component {
   render() {
@@ -9,7 +10,22 @@ class Step1 extends Component {
     return (
   
       <div>
-      
+      <Instructions title="Data Flow With Redux">
+            <h2>Getting Started</h2>
+          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
+          <p>In the next section, we will explore how this data flow works with a React application, then how
+            this flow is modified when requesting data from an API.
+          </p>
+          <p>To begin, we'll cover the three main aspects Redux adds to an app: the <em>store</em>,
+          <em>reducers</em>, and <em>actions</em>.</p>
+          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
+          <p>In the next section, we will explore how this data flow works with a React application, then how
+            this flow is modified when requesting data from an API.
+          </p>
+            <h2>Getting Started</h2>
+          <p>To begin, we'll cover the three main aspects Redux adds to an app: the <em>store</em>,
+          <em>reducers</em>, and <em>actions</em>.</p>
+      </Instructions>
       <Shape
         tooltip="The store is what holds the value of our state. It's also where our reducers lives."
         offsetLeft="-800"
