@@ -6,5 +6,7 @@ An instruction walkthrough about data flow in Redux.
 - -- have each step have its own css 
 - -- -- store as object or just CSS?
 
-[Style] 
-- remove static positioning on title
+[Instructions Component]
+- How to handle steps for each instructions?
+- -- Create new prop for each step
+- -- parse this.props.children based on h2 elements

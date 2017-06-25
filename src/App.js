@@ -9,18 +9,25 @@ import Shape from './components/shape/Shape';
 import Step0 from './steps/zero'
 import { Tooltip, OverlayTrigger } from 'react-bootstrap'
 
-class App extends Component {
+import router from './route'
+import { Switch, Route } from 'react-router-dom'
 
-  render() {
+
+import Step1 from './steps/one'
+
+export default function App() {
+
 
     return (
       <div>
+     
 
-      <Step0 />
+      <Switch>
+        <Route exact path='/' component={ Step0 } />
+        <Route path='/step1' component={ Step1 } />
+      </Switch>
 
-
-
-      <div className="content">
+      {/*<div className="content">
 
         <div className="view effect6"><h1>View</h1></div>   
         <div className="reducer-third"><h1>Reducers</h1></div>
@@ -37,15 +44,9 @@ class App extends Component {
         </div>
         <div className="state"><h2>State</h2></div>
         <div className="event"><h2>Event</h2></div>
-      </div>
-
-
+      </div>*/}
     </div>
-
-
-
     );
   }
-}
 
-export default App;
+
