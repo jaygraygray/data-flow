@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|PT+Mono|Poiret+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700|PT+Mono|Poiret+One&subset=cyrillic');
 
 html,body{
     padding: 0;
@@ -190,6 +190,43 @@ em {
     text-decoration: none;
     color: white;
 }
+
+.panel {
+    background: #58a8a4 !important;
+    color: #e0e0e0 !important;
+    border-style: none !important;
+    border-radius: 0 !important;
+    margin-top: 0 !important;
+    font-size: .8rem !important;
+    font-family: 'Raleway' !important;
+}
+
+.panel ul {
+    list-style: none;
+}
+
+.open-steps-panel {
+    background: #58a8a4;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    transition: all .2s;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    font-family: 'Raleway';
+    margin: -8px auto 0px auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 700;
+}
+
+.open-steps-panel:hover {
+    opacity: 1;
+    transition: all .2s;
+    cursor: pointer;
+    color: #fff;
+}
+
 
 .container {
     width: 920px;
@@ -439,7 +476,6 @@ em {
     position: absolute;
     bottom: 114px;
     right: 236px;
-
     opacity: .7;
 }
 

@@ -6,14 +6,13 @@ import User from './components/user/User';
 import Store from './components/store/Store';
 import Shape from './components/shape/Shape';
 
-import Step0 from './steps/zero'
+
 import { Tooltip, OverlayTrigger } from 'react-bootstrap'
 
-import router from './route'
 import { Switch, Route } from 'react-router-dom'
 
-
-import Step1 from './steps/one'
+import Step0 from './chapters/zero'
+import Step1 from './chapters/one'
 
 export default function App() {
 
