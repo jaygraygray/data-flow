@@ -9,7 +9,7 @@ class Step extends Component {
     } = this.props
     return (
       <div>
-        <h2>{title}</h2>
+          <h2 id={title}>{title}</h2>
         {children}
       </div>
     );

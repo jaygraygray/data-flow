@@ -25,8 +25,7 @@ export default function zero() {
           <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
           
           <p>In the next section, we will explore how this data flow works with a React application, then how
-            this flow is modified when requesting data from an API.
-          </p>
+            this flow is modified when requesting data from an API.</p>
         </Step>
         <Step title="This is the second step!">
           <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>

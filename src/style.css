@@ -38,6 +38,10 @@ em {
     padding: 3px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .instructions-container {
     background: #232a35;
     color: #fff;
@@ -197,13 +201,26 @@ em {
     border-style: none !important;
     border-radius: 0 !important;
     margin-top: 0 !important;
-    font-size: .8rem !important;
+    margin-bottom: 48px !important;
+    font-size: 8rem !important;
     font-family: 'Raleway' !important;
 }
 
 .panel ul {
     list-style: none;
 }
+
+.panel a, a:visited, a:active {
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.panel a:hover {
+    color: #e0e0e0;
+    text-decoration: underline;
+}
+
+
 
 .open-steps-panel {
     background: #58a8a4;
@@ -226,7 +243,6 @@ em {
     cursor: pointer;
     color: #fff;
 }
-
 
 .container {
     width: 920px;

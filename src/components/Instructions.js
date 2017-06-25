@@ -20,19 +20,20 @@ class Instructions extends Component {
     //---------------------------
     // include prop for displaying links to each step
     // ---------------------------
-    console.log(children)
+    
     const chapterNav = children.map((link,i) => {
       return (<li key={i}>
               <a href={`#${link.props.title}`}>{link.props.title}</a>
               </li>)
     })
-    
+
     return (
       
-      <div>
-          <div className="title-container">
+      <div style={{position: 'relative'}}>
+          <div id="top" className="title-container">
             <h1 className="title">{title}</h1> 
           </div>
+
           <div className="effect6">
           <div className="open-steps-panel"
               onClick={ () =>  { this.setState({ panelOpen: !this.state.panelOpen})} }>
@@ -47,6 +48,7 @@ class Instructions extends Component {
 
           {children}
           
+
       </div>
 
     );

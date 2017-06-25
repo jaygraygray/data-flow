@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import './style.css';
 
-import User from './components/user/User';
-import Store from './components/store/Store';
-import Shape from './components/shape/Shape';
-
-
 import { Tooltip, OverlayTrigger } from 'react-bootstrap'
 
 import { Switch, Route } from 'react-router-dom'
