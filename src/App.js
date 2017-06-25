@@ -18,21 +18,8 @@ class App extends Component {
 
       <Step0 />
 
-{/*
-      <div className="text">
-        
-        <h1>Getting Started</h1>
-          
-        <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-        <p>In the next section, we will explore how this data flow works with a React application, then how
-          this flow is modified when requesting data from an API.
-        </p>
-        <p>To begin, we'll cover the three main aspects Redux adds to an app: the <b>store</b>,
-        <b>reducers</b>, and <b>actions</b>.</p>
-        <h1>Test Stuff</h1>
-      </div>*/}
 
-{/*
+
       <div className="content">
 
         <div className="view effect6"><h1>View</h1></div>   
@@ -52,7 +39,7 @@ class App extends Component {
         <div className="event"><h2>Event</h2></div>
       </div>
 
-*/}
+
     </div>
 
 

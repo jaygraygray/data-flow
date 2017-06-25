@@ -4,7 +4,7 @@ import Shape from '../components/shape/Shape'
 
 import Instructions from '../components/instructions/Instructions'
 
-class Step1 extends Component {
+class Step0 extends Component {
   render() {
 
     return (
@@ -33,19 +33,19 @@ class Step1 extends Component {
 
       <div className="col-sm-8 viz-container">
       <div className="body">
-      <Shape
-        tooltip="The store is what holds the value of our state. It's also where our reducers lives."
-        offsetLeft="-800"
-        offsetTop="-400"
-        type="store"
-        ShapeStyle={'fdsa'}
-        TipStyle={'asdf'}
-        title='What is the store?'
-      > Store </Shape>
+        <Shape
+          tooltip="The store is what holds the value of our state. It's also where our reducers lives."
+          offsetLeft="-800"
+          offsetTop="-400"
+          type="store"
+          ShapeStyle={'fdsa'}
+          TipStyle={'asdf'}
+          title='What is the store?'
+        > Store </Shape>
+
+          </div>
       
-      </div>
-      
-      </div>
+        </div>
       
       </div>
       
@@ -96,4 +96,4 @@ const storeStyle = {
   }
 }
 
-export default Step1;
+export default Step0;
