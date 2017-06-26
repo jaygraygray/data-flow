@@ -503,5 +503,12 @@ a:hover {
 
 .bottomNavContainer {
     position: absolute;
-    bottom: 0
+    bottom: -4px;
+}
+
+.arrow {
+        background: #2bbd9c;
+    transform: rotate(90deg);
+    padding: 16px;
+    border-radius: 6px 0 0 6px;
 }

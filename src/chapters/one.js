@@ -4,6 +4,7 @@ import Shape from '../components/shape/Shape'
 
 import Instructions from '../components/Instructions'
 import Step from '../components/Step'
+import BottomNav from '../components/BottomNav'
 
 import { Link } from 'react-router-dom'
 
@@ -31,11 +32,13 @@ export default class One extends Component {
         ShapeStyle={storeStyle}
         TipStyle={tipStyle}
         title='What is the store?'
-      > Store </Shape>
+      > Store </Shape>asdf
+      <BottomNav/>  
     </div>
   </div>
+ 
 </div>
-      
+     
 
 </div>
       
