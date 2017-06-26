@@ -499,3 +499,9 @@ a:hover {
     margin: -13px;
     padding: 0;
 }
+
+
+.bottomNavContainer {
+    position: absolute;
+    bottom: 0
+}

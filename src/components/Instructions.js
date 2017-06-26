@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import '../style.css'
 
 import { Panel } from 'react-bootstrap'
-
 import Menu from './Menu'
+import BottomNav from './BottomNav'
 
 class Instructions extends Component {
   constructor(props) {
@@ -52,6 +52,7 @@ class Instructions extends Component {
 
           {children}
       
+      <BottomNav/>
       </div>
 
     );
