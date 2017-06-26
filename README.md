@@ -1,12 +1,5 @@
 An instruction walkthrough about data flow in Redux.
 
-[React] Need to:
-- handle different styles for each step
-- -- add a prop `step` that will determin which stylesheet to use
-- -- have each step have its own css 
-- -- -- store as object or just CSS?
+[6/25/17] - Need to style Store, Reducer, Action, etc. elements. Keep base styles in CSS file, and positioning/animation in each chapter component.
 
-[Instructions Component]
-- How to handle steps for each instructions?
-- -- Create new prop for each step
-- -- parse this.props.children based on h2 elements
+Also need to create bottom navigation to show current location. Create component that lists each chapter. Use this component for landing page Table of Contents and the navigation. 
