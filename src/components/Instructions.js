@@ -4,6 +4,8 @@ import '../style.css'
 
 import { Panel } from 'react-bootstrap'
 
+import Menu from './Menu'
+
 class Instructions extends Component {
   constructor(props) {
     super(props) 
@@ -30,8 +32,10 @@ class Instructions extends Component {
     return (
       
       <div style={{position: 'relative'}}>
+          
           <div id="top" className="title-container">
             <h1 className="title">{title}</h1> 
+            
           </div>
 
           <div className="effect6">
@@ -47,8 +51,7 @@ class Instructions extends Component {
           </div>
 
           {children}
-          
-
+      
       </div>
 
     );

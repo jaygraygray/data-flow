@@ -6,12 +6,15 @@ import Instructions from '../components/Instructions'
 import Step from '../components/Step'
 import { Link } from 'react-router-dom'
 
+
+
 export default function zero() {
 
 
     return (
 <div>
 <div className="row">
+
   <div className="col-sm-4 instructions-container">
     <div className="text scroll">
       <Instructions title="Data Flow With Redux">
