@@ -52,7 +52,6 @@ class Instructions extends Component {
 
           {children}
       
-      <BottomNav/>
       </div>
 
     );

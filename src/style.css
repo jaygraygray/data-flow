@@ -107,6 +107,7 @@ a:hover {
 .viz-container {
     background: #2C3543;
     height: 100vh;
+    margin-left: -15px;
 }
 
 
@@ -500,15 +501,14 @@ a:hover {
     padding: 0;
 }
 
-
-.bottomNavContainer {
-    position: absolute;
-    bottom: -4px;
+.bottomNavPanel {
+    
+    margin: 24px;
 }
 
-.arrow {
-        background: #2bbd9c;
-    transform: rotate(90deg);
-    padding: 16px;
-    border-radius: 6px 0 0 6px;
+.bottomNavPanel-body {
+    padding-right: 41px;
+    margin: 24px;
+    background: #fff;
 }
+
