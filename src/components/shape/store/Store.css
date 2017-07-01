@@ -1,19 +1,17 @@
 .store {
-    text-align: center;
-    width: 500px;
-    height: 142px;
-    color: rgb(46, 196, 182);
-    margin-left: 392px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgb(46, 196, 182);
-    border-image: initial;
-    border-radius: 6px;
-    background: rgb(183, 255, 247);
-}
+  text-align: center;
+  width: 500px;
+  height: 142px;
+  color: #2ec4b6;
+  margin-left: 392px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: #2ec4b6;
+  border-image: initial;
+  border-radius: 6px;
+  background: #b7fff7; }
 
 .store h1 {
-    position: absolute;
-    top: -70px;
-    left: 221px;
-}
+  position: absolute;
+  top: -70px;
+  left: 221px; }

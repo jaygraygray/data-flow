@@ -6,8 +6,10 @@ import '../../style.css'
 
 class Shape extends Component {
   
+
+
   render() {
-    
+
     const {
       children,
       tooltip,
@@ -18,16 +20,14 @@ class Shape extends Component {
     } = this.props
     
     const tooltipText = (
-      <Popover style={TipStyle} id="tooltip" title={title}>{tooltip}</Popover>
+      <Popover className="tip" id="tooltip" title={title}>{tooltip}</Popover>
     )
-
-    console.log(ShapeStyle)
 
     return (
 
 
       <OverlayTrigger rootClose={true} trigger="click" placement="left" overlay={tooltipText}>
-        <div style={ShapeStyle[type]}>
+        <div className={type} style={ ShapeStyle[type] }>
           <h1>{children}</h1>
         </div>
       </OverlayTrigger>     

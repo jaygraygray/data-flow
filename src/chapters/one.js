@@ -16,7 +16,9 @@ export default class One extends Component {
   <div className="col-sm-4 instructions-container">
     <div className="text scroll">
       <Instructions title="What is Redux?">
-        <Step title="This is what Redux is"></Step>
+        <Step title="This is what Redux is">
+          fl;aksdjf; laskjfa stjwa [oijsdl;fk jawtel; kjasd;lkj sdf;ljka wto[ij]]
+        </Step>
         <Step title="This is not what Redux is"></Step>
         <Step title="Actions, Reducers, Store"></Step>
         <Step title="When to use?"></Step>
@@ -27,12 +29,32 @@ export default class One extends Component {
   <div className="col-sm-8 viz-container">
     <div className="body">
       <Shape
+        title='What is the store?'
         tooltip="The store is what holds the value of our state. It's also where our reducers lives."
         type="store"
-        ShapeStyle={storeStyle}
+        ShapeStyle={style}
         TipStyle={tipStyle}
-        title='What is the store?'
-      > Store </Shape>asdf
+      > Store </Shape>
+
+
+        <div className="view effect6"><h1>View</h1></div>   
+        {/*
+        <div className="reducer"><h1>Reducers</h1></div>
+        <div className="middleware"><h2>Middleware</h2></div>
+        <div className="action-container">
+          <div className="action-zero"><h1>Actions</h1></div>
+          <div className="action-one"><h1>Actions</h1></div>
+          <div className="action-two"><h1>Actions</h1></div>
+          <div className="action-three"><h1>Actions</h1></div>
+          <div className="action-four"><h1>Actions</h1></div>
+          <div className="action-five"><h1>Actions</h1></div>
+        </div>
+        <div className="state"><h2>State</h2></div>
+        <div className="event"><h2>Event</h2></div>*/}
+     
+
+
+
       <BottomNav/>  
     </div>
   </div>
@@ -51,17 +73,9 @@ const tipStyle = {
   lineHeight: '24px'
 }
 
-const storeStyle = {
+const style = {
   store: {
-    height: '200px',
-    textAlign: 'center',
-    color: '#fff',
-    marginLeft: '392px',
-    borderWidth: '6px',
-    borderStyle: 'solid',
-    borderColor: 'rgb(46, 196, 182)',
-    borderRadius: '6px',
-    background: 'pink',
-    position: 'relative',
+    marginTop: '150px',
+    marginLeft: '320px',
   },
 }
