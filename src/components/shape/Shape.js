@@ -18,9 +18,10 @@ class Shape extends Component {
       title,
       TipStyle
     } = this.props
-    
+
+
     const tooltipText = (
-      <Popover className="tip" id="tooltip" title={title}>{tooltip}</Popover>
+      <Popover className="tip" style={TipStyle} id="tooltip" title={title}>{tooltip}</Popover>
     )
 
     return (

@@ -324,23 +324,12 @@ a:hover {
             transform:skew(8deg) rotate(3deg);
 }
 
-.view {
-    text-align: center;
-    width: 400px;
-    color: rgb(42, 41, 37);
-    margin-left: 440px;
-    margin-top: 180px;
-    border-width: 6px;
-    border-style: solid;
-    border-color: rgb(42, 41, 37);
-    border-image: initial;
-    border-radius: 6px;
-    background: rgb(228, 228, 228);
+
+.tip {
+    font-family: 'Ubuntu';
+    line-height: 24px;
 }
 
-.view h1 {
-    margin: 6px;
-}
 
 .reducer {
     font-size: 15px;
@@ -477,8 +466,50 @@ a:hover {
     border-color: $store-border;
 }
 
+
 .store h1 {
     color: #fff;
     text-shadow: 1px 1px 1px #000;
+    transition: all .3s;
 }
 
+.store:hover h1 {
+    transition: all .3s;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+.view {
+    text-align: center;
+    width: 95%;
+    color: black;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $view-bg;
+    border-image: initial;
+    border-radius: 6px;
+    background: $view-bg;
+    transition: all .3s;
+    box-shadow: 0px 3px 36px 6px rgba(0,0,0,0.41);
+}
+
+.view:hover {
+    transition: all .3s;
+    box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.52);
+    border-color: $view-border;
+}
+
+.view:hover h1 {
+    transition: all .3s;
+    letter-spacing: 2px;
+    text-shadow: none;
+}
+
+.view h1 {
+    margin: 6px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #fff;
+    transition: all .3s;
+}

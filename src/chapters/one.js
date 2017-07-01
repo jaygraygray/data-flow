@@ -33,11 +33,16 @@ export default class One extends Component {
         tooltip="The store is what holds the value of our state. It's also where our reducers lives."
         type="store"
         ShapeStyle={style}
-        TipStyle={tipStyle}
+        TipStyle={style.store.tip}
       > Store </Shape>
 
-
-        <div className="view effect6"><h1>View</h1></div>   
+      <Shape
+        title="View who?"
+        tooltip="This is what the user sees."
+        type="view"
+        ShapeStyle={style}
+        TipStyle={style.store.tip}
+        > View </Shape>   
         {/*
         <div className="reducer"><h1>Reducers</h1></div>
         <div className="middleware"><h2>Middleware</h2></div>
@@ -68,14 +73,20 @@ export default class One extends Component {
   }
 }
 
-const tipStyle = {
-  fontFamily: 'Ubuntu',
-  lineHeight: '24px'
-}
 
 const style = {
   store: {
-    marginTop: '150px',
+    marginTop: '30px',
     marginLeft: '320px',
+
+    tip : {
+      background: 'blue'
+    }
   },
+
+
+  view: {
+    margin: 'auto',
+    marginTop: '250px',
+  }
 }
