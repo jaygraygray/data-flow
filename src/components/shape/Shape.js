@@ -16,18 +16,25 @@ class Shape extends Component {
       type,
       ShapeStyle,
       title,
-      TipStyle
+      TipStyle,
+      placement,
     } = this.props
 
 
     const tooltipText = (
-      <Popover className="tip" style={TipStyle} id="tooltip" title={title}>{tooltip}</Popover>
+      <Popover
+              className="tip" 
+              style={TipStyle} 
+              id="tooltip" 
+              title={title}>{tooltip}</Popover>
     )
 
     return (
+      <OverlayTrigger placement={placement} 
+                      rootClose={true} 
+                      trigger="click" 
+                      overlay={tooltipText}>
 
-
-      <OverlayTrigger rootClose={true} trigger="click" placement="left" overlay={tooltipText}>
         <div className={type} style={ ShapeStyle[type] }>
           <h1>{children}</h1>
         </div>

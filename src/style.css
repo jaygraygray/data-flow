@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700|PT+Mono|Poiret+One&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu|Open+Sans|Raleway:400,700|PT+Mono|Poiret+One&subset=cyrillic");
 html, body {
   padding: 0;
   margin: 0;
@@ -259,9 +259,14 @@ a:hover {
   -o-transform: skew(8deg) rotate(3deg);
   transform: skew(8deg) rotate(3deg); }
 
-.tip {
-  font-family: 'Ubuntu';
-  line-height: 24px; }
+.popover-title {
+  font-family: 'Ubuntu' !important;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #fff !important; }
+
+.popover-content {
+  font-family: 'Ubuntu' !important;
+  font-size: 1.6rem; }
 
 .reducer {
   font-size: 15px;
@@ -390,11 +395,6 @@ a:hover {
   text-shadow: 1px 1px 1px #000;
   transition: all .3s; }
 
-.store:hover h1 {
-  transition: all .3s;
-  letter-spacing: 2px;
-  text-shadow: none; }
-
 .view {
   text-align: center;
   width: 95%;
@@ -414,11 +414,6 @@ a:hover {
   transition: all .3s;
   box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.52);
   border-color: #fcfbff; }
-
-.view:hover h1 {
-  transition: all .3s;
-  letter-spacing: 2px;
-  text-shadow: none; }
 
 .view h1 {
   margin: 6px;

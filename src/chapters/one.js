@@ -31,6 +31,7 @@ export default class One extends Component {
       <Shape
         title='What is the store?'
         tooltip="The store is what holds the value of our state. It's also where our reducers lives."
+        placement="left"
         type="store"
         ShapeStyle={style}
         TipStyle={style.store.tip}
@@ -39,6 +40,7 @@ export default class One extends Component {
       <Shape
         title="View who?"
         tooltip="This is what the user sees."
+        placement="top"
         type="view"
         ShapeStyle={style}
         TipStyle={style.store.tip}
@@ -80,7 +82,7 @@ const style = {
     marginLeft: '320px',
 
     tip : {
-      background: 'blue'
+      background: 'white'
     }
   },
 

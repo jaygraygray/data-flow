@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700|PT+Mono|Poiret+One&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Open+Sans|Raleway:400,700|PT+Mono|Poiret+One&subset=cyrillic');
 
 @import './colors.scss';
 
@@ -325,9 +325,15 @@ a:hover {
 }
 
 
-.tip {
-    font-family: 'Ubuntu';
-    line-height: 24px;
+.popover-title {
+    font-family: 'Ubuntu' !important;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #fff !important;
+}
+
+.popover-content {
+    font-family: 'Ubuntu' !important;
+    font-size: 1.6rem;
 }
 
 
@@ -421,7 +427,6 @@ a:hover {
 }
 
 .bottomNavPanel {
-    
     margin: 24px;
 }
 
@@ -473,11 +478,6 @@ a:hover {
     transition: all .3s;
 }
 
-.store:hover h1 {
-    transition: all .3s;
-    letter-spacing: 2px;
-    text-shadow: none;
-}
 
 .view {
     text-align: center;
@@ -501,11 +501,6 @@ a:hover {
     border-color: $view-border;
 }
 
-.view:hover h1 {
-    transition: all .3s;
-    letter-spacing: 2px;
-    text-shadow: none;
-}
 
 .view h1 {
     margin: 6px;
