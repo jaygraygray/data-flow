@@ -91,7 +91,7 @@ export default class One extends Component {
         TipStyle={style.tip}
         > Event </Shape>
 
-        <BottomNav/>  
+        {/*<BottomNav/>  */}
       </div>
     </div>
   </div>
@@ -110,7 +110,7 @@ const style = {
   },
   view: {
     margin: 'auto',
-    marginTop: '250px',
+    marginTop: '270px',
   },
   reducer: {
     position: 'absolute',
@@ -124,12 +124,17 @@ const style = {
   },
   action: {
     position: 'absolute',
-    top: '290px',
+    top: '260px',
     right: '390px',
   },
   state: {
     position: 'absolute',
     top: '69px',
     right: '251px',
+  },
+  event: {
+    position: 'absolute',
+    bottom: '209px',
+    right: '391px',
   }
 }

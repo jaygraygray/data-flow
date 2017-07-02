@@ -337,26 +337,6 @@ a:hover {
 }
 
 
-
-
-.event {
-    border-width: 0 0 8px 0;
-    border-style: solid;
-    width: 80px;
-    text-align: center;
-    padding-bottom: 5px;
-    border-color: yellow;
-    position: absolute;
-    bottom: 114px;
-    right: 236px;
-    opacity: .7;
-}
-
-.event h2 {
-    margin: -13px;
-    padding: 0;
-}
-
 .bottomNavPanel {
     margin: 24px;
 }
@@ -560,4 +540,30 @@ a:hover {
     margin: 0 !important;
     padding: 0 !important;
     text-shadow: 1px 1px 1px #fff;
+}
+
+
+.event {
+    text-align: center;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-color: $event-border;
+    padding: 18px 36px 18px 36px;
+    transition: all .2s;
+    border-width: 3px;
+}
+
+.event:hover {
+    padding: 16px 36px 20px 36px;
+    transition: all .2s;
+    border-color: $event-border-hover;
+    text-shadow: 1px 1px 1px #000, 1px 1px 3px #fff;
+}
+
+.event h1 {
+    transition: all .2s;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0 !important;
+    text-shadow: 1px 1px 1px #000, 1px 1px 3px #000;
 }
