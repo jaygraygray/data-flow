@@ -268,22 +268,6 @@ a:hover {
   font-family: 'Ubuntu' !important;
   font-size: 1.6rem; }
 
-.state {
-  border-width: 0 0 8px 0;
-  border-style: solid;
-  padding-bottom: 5px;
-  border-color: yellow;
-  position: absolute;
-  top: 69px;
-  right: 46px;
-  opacity: .7;
-  width: 80px;
-  text-align: center; }
-
-.state h2 {
-  margin: -13px;
-  padding: 0; }
-
 .event {
   border-width: 0 0 8px 0;
   border-style: solid;
@@ -334,7 +318,8 @@ a:hover {
   height: 175px;
   transition: all .3s;
   box-shadow: 0px 3px 36px 6px rgba(0, 0, 0, 0.41);
-  margin: auto; }
+  margin: auto;
+  position: relative; }
 
 .store:hover {
   transition: all .3s;
@@ -344,7 +329,11 @@ a:hover {
 .store h1 {
   color: #fff;
   text-shadow: 1px 1px 1px #000;
-  transition: all .3s; }
+  transition: all .3s;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -78px;
+  top: 35px; }
 
 .view {
   text-align: center;
@@ -430,7 +419,14 @@ a:hover {
   border-image: initial;
   background: #f6a6ff;
   text-align: center;
-  border-radius: 7px; }
+  border-radius: 4px;
+  box-shadow: 0px 2px 22px 1px rgba(0, 0, 0, 0.88);
+  transition: all .2s; }
+
+.action:hover {
+  transition: all .2s;
+  box-shadow: 0px 0px 5px 1px black;
+  background: #f179ff; }
 
 .action h1 {
   font-size: 2rem;
@@ -439,3 +435,21 @@ a:hover {
   padding-top: 18px;
   color: #fff;
   text-shadow: 1px 1px 1px #000, 1px 1px 4px #000; }
+
+.state {
+  background: #aff8db;
+  border-width: 3px;
+  border-style: solid;
+  padding-bottom: 5px;
+  border-color: #36c18a;
+  opacity: 1;
+  text-align: center;
+  line-height: 0;
+  padding: 28px;
+  border-radius: 26px; }
+
+.state h1 {
+  font-size: 2rem;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-shadow: 1px 1px 1px #fff; }

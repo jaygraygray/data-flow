@@ -72,19 +72,24 @@ export default class One extends Component {
         ShapeStyle={style.action}
         TipStyle={style.tip}
         > Action </Shape>
-        {/*<div className="action-container">
-          <div className="action-zero"><h1>Actions</h1></div>
-          <div className="action-one"><h1>Actions</h1></div>
-          <div className="action-two"><h1>Actions</h1></div>
-          <div className="action-three"><h1>Actions</h1></div>
-          <div className="action-four"><h1>Actions</h1></div>
-          <div className="action-five"><h1>Actions</h1></div>
-        </div>
-        <div className="state"><h2>State</h2></div>
-        <div className="event"><h2>Event</h2></div>*/}
-     
 
+      <Shape 
+        title="State of Affairs"
+        tooltip="This is where all the magic is stored."
+        placement="left"
+        type="state"
+        ShapeStyle={style.state}
+        TipStyle={style.tip}
+        > State </Shape>
 
+      <Shape
+        title="Event"
+        tooltip="It has to start somewhere"
+        placement="right"
+        type="event"
+        ShapeStyle={style.event}
+        TipStyle={style.tip}
+        > Event </Shape>
 
         <BottomNav/>  
       </div>
@@ -109,13 +114,13 @@ const style = {
   },
   reducer: {
     position: 'absolute',
-    top: '111px',
-    left: '381px',
+    top: '86px',
+    left: '350px',
   },
   middleware: {
     position: 'absolute',
-    top: '94px',
-    right: '610px'
+    top: '98px',
+    right: '590px'
   },
   reducer2: {
     position: 'absolute',
@@ -126,5 +131,10 @@ const style = {
     position: 'absolute',
     top: '290px',
     right: '390px',
+  },
+  state: {
+    position: 'absolute',
+    top: '69px',
+    right: '251px',
   }
 }
