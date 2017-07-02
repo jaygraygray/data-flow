@@ -54,8 +54,17 @@ export default class One extends Component {
         ShapeStyle={style}
         TipStyle={style.tip}
         > Reducer </Shape>  
+
+      <Shape 
+        title="Middleware: My Functionality, Please"
+        tooltip="Middleware is optional packages that add additional functionality to existing packages. <br> The only we'll be dealing with in this walkthrough is <b>redux-promise-middleware</b>"
+        placement="left"
+        type="middleware"
+        ShapeStyle={style}
+        TipStyle={style.tip}
+        > Middleware </Shape>
         {/*
-        <div className="reducer"><h1>Reducers</h1></div>
+        
         <div className="middleware"><h2>Middleware</h2></div>
         <div className="action-container">
           <div className="action-zero"><h1>Actions</h1></div>
@@ -94,9 +103,13 @@ const style = {
     marginTop: '250px',
   },
   reducer: {
-
     position: 'absolute',
     top: '111px',
     left: '501px',
+  },
+  middleware: {
+    position: 'absolute',
+    top: '94px',
+    right: '440px'
   }
 }

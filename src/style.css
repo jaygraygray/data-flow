@@ -268,24 +268,6 @@ a:hover {
   font-family: 'Ubuntu' !important;
   font-size: 1.6rem; }
 
-.middleware {
-  font-size: 10px;
-  color: #b7c6ff;
-  width: 102px;
-  display: flex;
-  justify-content: center;
-  transform: rotate(90deg);
-  position: absolute;
-  top: 51px;
-  right: 414px;
-  opacity: 0.4;
-  border-width: 4px;
-  border-style: solid;
-  border-color: #b7c6ff;
-  border-image: initial;
-  border-radius: 6px;
-  background: white; }
-
 .action {
   font-size: 10px;
   color: #215990;
@@ -427,3 +409,30 @@ a:hover {
   padding-bottom: 18px;
   text-shadow: 1px 1px 1px #000;
   transition: all .3s; }
+
+.middleware {
+  color: #fff;
+  width: 112px;
+  text-align: center;
+  justify-content: center;
+  transform: rotate(90deg);
+  opacity: .6;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #fbe4ff;
+  border-image: initial;
+  border-radius: 6px;
+  background: #fbe4ff;
+  transition: all .2s; }
+
+.middleware:hover {
+  opacity: 1;
+  transition: all .2s; }
+
+.middleware h1 {
+  transition: all .2s;
+  font-size: 1.6rem;
+  margin: 0 !important;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-shadow: 0px 0px 4px #000, 0px 0px 1px #000; }
