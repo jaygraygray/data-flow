@@ -26,19 +26,15 @@ class Shape extends Component {
               className="tip" 
               style={TipStyle} 
               id="tooltip" 
-              title={title}>{tooltip}</Popover>)
-
-
-
-
-
+              title={title}
+              >{tooltip}</Popover>)
     return (
       <OverlayTrigger placement={placement} 
                       rootClose={true} 
                       trigger="click" 
                       overlay={tooltipText}>
 
-        <div className={type} style={ ShapeStyle[type] }>
+        <div className={type} style={ShapeStyle}>
           <h1>{children}</h1>
         </div>
       </OverlayTrigger>     
