@@ -34,7 +34,7 @@ export default class One extends Component {
         placement="left"
         type="store"
         ShapeStyle={style}
-        TipStyle={style.store.tip}
+        TipStyle={style.tip}
       > Store </Shape>
 
       <Shape
@@ -43,8 +43,17 @@ export default class One extends Component {
         placement="top"
         type="view"
         ShapeStyle={style}
-        TipStyle={style.store.tip}
-        > View </Shape>   
+        TipStyle={style.tip}
+        > View </Shape> 
+
+      <Shape
+        title="Reducers: Heavy Lifting Functions"
+        tooltip="This is where the magic of updating your state happens."
+        placement="bottom"
+        type="reducer"
+        ShapeStyle={style}
+        TipStyle={style.tip}
+        > Reducer </Shape>  
         {/*
         <div className="reducer"><h1>Reducers</h1></div>
         <div className="middleware"><h2>Middleware</h2></div>
@@ -62,33 +71,32 @@ export default class One extends Component {
 
 
 
-      <BottomNav/>  
+        <BottomNav/>  
+      </div>
     </div>
   </div>
- 
 </div>
-     
-
-</div>
-      
     );
   }
 }
 
 
 const style = {
+  tip : {
+    background: 'white'
+  },
   store: {
     marginTop: '30px',
     marginLeft: '320px',
-
-    tip : {
-      background: 'white'
-    }
   },
-
-
   view: {
     margin: 'auto',
     marginTop: '250px',
+  },
+  reducer: {
+
+    position: 'absolute',
+    top: '111px',
+    left: '501px',
   }
 }

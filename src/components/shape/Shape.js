@@ -26,8 +26,11 @@ class Shape extends Component {
               className="tip" 
               style={TipStyle} 
               id="tooltip" 
-              title={title}>{tooltip}</Popover>
-    )
+              title={title}>{tooltip}</Popover>)
+
+
+
+
 
     return (
       <OverlayTrigger placement={placement} 
