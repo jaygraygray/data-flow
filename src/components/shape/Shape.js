@@ -19,7 +19,7 @@ class Shape extends Component {
       TipStyle,
       placement,
     } = this.props
-
+console.log(ShapeStyle)
 
     const tooltipText = (
       <Popover
@@ -33,7 +33,7 @@ class Shape extends Component {
                       rootClose={true} 
                       trigger="click" 
                       overlay={tooltipText}>
-
+                      
         <div className={type} style={ShapeStyle}>
           <h1>{children}</h1>
         </div>
