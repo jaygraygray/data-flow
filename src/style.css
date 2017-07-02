@@ -312,7 +312,7 @@ a:hover {
   border-radius: 25px;
   background: #ffabab;
   border-Style: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-Color: #ffabab;
   width: 500px;
   height: 175px;
@@ -322,6 +322,7 @@ a:hover {
   position: relative; }
 
 .store:hover {
+  background: #ff8c8c;
   transition: all .3s;
   box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.52);
   border-color: #ffdedd; }
@@ -371,6 +372,7 @@ a:hover {
   box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.58) inset; }
 
 .reducer:hover {
+  background: #6f7eff;
   transition: all .3s;
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.68) inset;
   border-color: #b2bbff; }
@@ -446,7 +448,17 @@ a:hover {
   text-align: center;
   line-height: 0;
   padding: 28px;
-  border-radius: 26px; }
+  border-radius: 26px;
+  transition: all .2s; }
+
+.state:hover {
+  border-color: #1de495;
+  background: #8dfbcf;
+  border-width: 8px;
+  transition: all .2s;
+  background: #aff8db;
+  margin-right: -5px;
+  margin-top: -5px; }
 
 .state h1 {
   font-size: 2rem;

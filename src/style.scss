@@ -388,7 +388,7 @@ a:hover {
     border-radius: 25px;
     background: $store-bg;
     border-Style: solid;
-    border-width: 3px;
+    border-width: 1px;
     border-Color: $store-bg;
     width: 500px;
     height: 175px;
@@ -399,11 +399,11 @@ a:hover {
 }
 
 .store:hover {
+    background: #ff8c8c;
     transition: all .3s;
     box-shadow: 0px 3px 7px 3px rgba(0,0,0,0.52);
     border-color: $store-border;
 }
-
 
 .store h1 {
     color: #fff;
@@ -414,7 +414,6 @@ a:hover {
     right: -78px;
     top: 35px;
 }
-
 
 .view {
     text-align: center;
@@ -458,6 +457,7 @@ a:hover {
 }
 
 .reducer:hover {
+    background: $reducer-bg-hover;
     transition: all .3s;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.68) inset;
     border-color: $reducer-border;
@@ -542,6 +542,17 @@ a:hover {
     line-height: 0;
     padding: 28px;
     border-radius: 26px;
+    transition: all .2s;
+}
+
+.state:hover {
+    border-color: #1de495;
+    background: #8dfbcf;
+    border-width: 8px;
+    transition: all .2s;
+    background: $state-bg;
+    margin-right: -5px;
+    margin-top: -5px;
 }
 
 .state h1 {

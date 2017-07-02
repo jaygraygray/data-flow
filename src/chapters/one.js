@@ -122,11 +122,6 @@ const style = {
     top: '98px',
     right: '590px'
   },
-  reducer2: {
-    position: 'absolute',
-    top: '250px',
-    left: '450px',
-  },
   action: {
     position: 'absolute',
     top: '290px',
