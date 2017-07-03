@@ -4,15 +4,16 @@ import Shape from '../components/shape/Shape'
 
 import Instructions from '../components/Instructions'
 import Step from '../components/Step'
-import { Link } from 'react-router-dom'
 
 
+import OverlayNav from '../components/OverlayNav'
 
 export default function zero() {
 
 
     return (
 <div>
+
 <div className="row">
 
   <div className="col-sm-4 instructions-container">
@@ -128,24 +129,9 @@ export default function zero() {
     </div>
   </div>
 </div>
-      
     
-<div className="row overlay">
-  <div className="col-sm-4">&nbsp;</div>
-    <div className="col-sm-8 overlay-content">
-      <Link to="step1">
-        <div className="section effect7"><span className="num">1</span> <span className="section-text">What is Redux?</span></div>
-      </Link>
-      <div className="section effect7"><span className="num">2</span> <span className="section-text">Actions, Stores, Reducers, Oh My!</span></div>
-      <div className="section effect7"><span className="num">3</span> <span className="section-text">User Events</span></div>
-      <div className="section effect7"><span className="num">4</span> <span className="section-text">Actions: Creators, Types, Payloads</span></div>
-      <div className="section effect7"><span className="num">5</span> <span className="section-text">Dispatching Actions to Reducers</span></div>
-      <div className="section effect7"><span className="num">6</span> <span className="section-text">Reducer Madness</span></div>
-      <div className="section effect7"><span className="num">7</span> <span className="section-text">Reducer Madness: Extended</span></div>
-      <div className="section effect7"><span className="num">8</span> <span className="section-text">New State, New View, New You</span></div>
-      <a href="#" className="start"> Start &nbsp; &gt; </a>
-    </div>
-  </div>
+    <OverlayNav startButtonDisplay="false"/>
+
 </div>
       
     );
