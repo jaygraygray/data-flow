@@ -21,43 +21,20 @@ export default function zero() {
       <Instructions title="Data Flow With Redux">
         <Step title="Getting Started">
           <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-          <p>In the next section, we will explore how this data flow works with a React application, then how
-          this flow is modified when requesting data from an API.</p>
-          <p>To begin, we'll cover the three main aspects Redux adds to an app: the <em>store</em>,
-          <em>reducers</em>, and <em>actions</em>.</p>
-          
-          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-          
-          <p>In the next section, we will explore how this data flow works with a React application, then how
-            this flow is modified when requesting data from an API.</p>
+          <p>Basic explanations and code samples will be provided here, on the left-hand side.</p>
+          <p>Clicking on the labelled items on the right-hand will show more detailed explanations, resources, and code samples.</p>
         </Step>
-        <Step title="This is the second step!">
-          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-          <p>In the next section, we will explore how this data flow works with a React application, then how
-          this flow is modified when requesting data from an API.</p>
-          <p>To begin, we'll cover the three main aspects Redux adds to an app: the <em>store</em>,
-          <em>reducers</em>, and <em>actions</em>.</p>
-          
-          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-          
-          <p>In the next section, we will explore how this data flow works with a React application, then how
-            this flow is modified when requesting data from an API.
+        <Step title="Structure">
+          <p>First, we'll define some key terms you'll need to understand to get the most out of this guide. 
+            Redux is a pretty simple pattern to follow, but it's easy to get hung up on the jargon that gets thrown around. 
           </p>
+          <p>After that, we'll dive into the thick of things: each step in the process of a user triggering an update 
+            in your app will be covered and explained in detail. </p>
         </Step>
-        <Step title="This is the third step!">
-          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-          <p>In the next section, we will explore how this data flow works with a React application, then how
-          this flow is modified when requesting data from an API.</p>
-          <p>To begin, we'll cover the three main aspects Redux adds to an app: the <em>store</em>,
-          <em>reducers</em>, and <em>actions</em>.</p>
-          
-          <p>By the end of this guide, you will understand how data flows in an application utilizing Redux.</p>
-          
-          <p>In the next section, we will explore how this data flow works with a React application, then how
-            this flow is modified when requesting data from an API.
-          </p>
+        <Step title="Who's this for?">
+          <p>This guide is aimed at beginner web developers and those new to the Flux/Redux pattern. If you've already built an app or two
+            using Redux, this guide most likely won't be of great benefit to you, but a little refresher never hurt anyone ;) </p>
         </Step>
-      
       </Instructions>
     </div>  
   </div>
@@ -130,7 +107,7 @@ export default function zero() {
   </div>
 </div>
     
-    <OverlayNav startButtonDisplay="false"/>
+    <OverlayNav startButtonDisplay="true"/>
 
 </div>
       

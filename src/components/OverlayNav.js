@@ -14,9 +14,7 @@ class OverlayNav extends Component {
   }
 
   MenuAction() {
-    console.log("Before setState: ", this.state.buttonStatus)
     this.setState({ buttonStatus: !this.state.buttonStatus })
-    console.log("After setState: ", this.state.buttonStatus)
   }
   render() {
     const {
@@ -40,9 +38,7 @@ class OverlayNav extends Component {
                   onClick={ this.MenuAction }/>
                  </div> 
                  : 
-                 <div className={css(close)} onClick={ this.MenuAction }>
-                   <img className={css(img)} src={require('../images/delete.svg')} />
-                 </div>
+               <div></div>
                }
               
 
@@ -51,7 +47,7 @@ class OverlayNav extends Component {
               
             <div className="col-sm-8 overlay-content">
               <Link to="step1">
-                <div className="section effect7"><span className="num">1</span> <span className="section-text">What is Redux?</span></div>
+                <div className="section effect7"><span className="num">1</span> <span className="section-text">Redux Terms</span></div>
               </Link>
               <div className="section effect7"><span className="num">2</span> <span className="section-text">Actions, Stores, Reducers, Oh My!</span></div>
               <div className="section effect7"><span className="num">3</span> <span className="section-text">User Events</span></div>
@@ -64,7 +60,7 @@ class OverlayNav extends Component {
               
               }
               {
-                startButtonDisplay=='true' ?  <a href="#" className="start"> Start &nbsp; &gt; </a> : null
+                startButtonDisplay=='true' ?  <Link to="step1"><a href="#" className="start"> Start &nbsp; &gt; </a></Link> : null
               }
             </div>
 </div>

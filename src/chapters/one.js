@@ -4,7 +4,7 @@ import Shape from '../components/shape/Shape'
 
 import Instructions from '../components/Instructions'
 import Step from '../components/Step'
-import BottomNav from '../components/BottomNav'
+import OverlayNav from '../components/OverlayNav'
 
 import { Link } from 'react-router-dom'
 
@@ -15,13 +15,43 @@ export default class One extends Component {
 <div className="row">
   <div className="col-sm-4 instructions-container">
     <div className="text scroll">
-      <Instructions title="What is Redux?">
-        <Step title="This is what Redux is">
-          fl;aksdjf; laskjfa stjwa [oijsdl;fk jawtel; kjasd;lkj sdf;ljka wto[ij]]
+      <Instructions title="Key Terms">
+        <Step title="What is Redux?">
+          <p>Redux is a library that utilizes the Flux pattern, which is a popular pattern to use while building apps with <em>component-based architecture</em>. So what does that mean?</p>
+          <p>At the end of the day, Redux helps us do one thing: <em>manage the state</em> of our application. If you’re not familiar with state, worry not -- it’s described below.</p>
+          <p>At the simplest level, Redux adds three things to an application: <em>Actions</em>, <em>Reducers</em>, and a <em>Store</em>. </p>
+          <p>We’ll explore each of these things in turn, with simple explanations written here, and more detailed descriptions for each element on the right.</p>
+          <p>Before we jump into the nitty gritty, we have to cover some key terms: Actions, Reducers, Store, View, Application State, and Events. If you’re familiar with all these terms, move on!</p>
         </Step>
-        <Step title="This is not what Redux is"></Step>
-        <Step title="Actions, Reducers, Store"></Step>
-        <Step title="When to use?"></Step>
+        <Step title="Redux Terms">
+          <p>
+            <em>Actions</em> are the movers and shakers in an app using Redux. Actions are just objects, that at minimum, have two properties: a <em>type</em> and a <em>payload</em>. 
+            The payload is <em>data</em>, and the type is an instruction on <em>how to handle</em> that data.  </p>
+          <p>
+            <em>Reducers</em> are the heavy lifters in our app. Reducers are <em>pure functions</em>. That's it. Reducers are functions. Say it with me one more time:
+            Reducers Are Just Functions. Reducers accept <em>two parameters</em>: an action object and a state object.
+          </p>
+          <p>
+            Reducers will change state based on the <em>type</em> of our action, and it will be changed with the values passed on our <em>payload</em>. 
+          </p>
+          <p>
+            The <em>Store</em> is what sends updated changes to our view. In order for our view to send actions or receive changes, it needs to be connected to our store.
+            Inside the store is also where our reducers live, breathe, and do everything fun.
+          </p>
+        </Step>
+        <Step title="General Terms">
+          <p>
+            The <em>view</em> is what the user sees and interacts with. Images, links, buttons, form fields, all that jazz. This walkthrough makes no assumptions
+            about how you're serving your view, but I will in the near future release a walkthrough specifically for a React / Redux application.
+          </p>
+          <p>
+            An <em>event</em> is created when the user interacts with the view in a particular way. A full list can be found <a href="https://developer.mozilla.org/en-US/docs/Web/Events">here</a>, 
+            but the most common events you'll be handling are clicks and submits.
+          </p>
+          <p>
+            <em>Application state</em>, or <em>state</em>, is the data your application is tracking and making changes to. 
+          </p>
+        </Step>
       </Instructions>
     </div>  
   </div>
@@ -91,10 +121,12 @@ export default class One extends Component {
         TipStyle={style.tip}
         > Event </Shape>
 
-        {/*<BottomNav/>  */}
+       
+        
       </div>
     </div>
   </div>
+  <OverlayNav startButtonDisplay="true"/>
 </div>
     );
   }

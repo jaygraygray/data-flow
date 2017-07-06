@@ -4,7 +4,6 @@ import '../style.css'
 
 import { Panel } from 'react-bootstrap'
 import Menu from './Menu'
-import OverlayNav from './OverlayNav'
 
 class Instructions extends Component {
   constructor(props) {

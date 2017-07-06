@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu|Open+Sans|Raleway:400,700|PT+Mono|Poiret+One&subset=cyrillic");
 html, body {
   padding: 0;
-  margin: 0;
-  overflow: hidden; }
+  margin: auto;
+  overflow: hidden;
+  max-width: 1366px; }
 
 * {
   font-size: 16px; }
