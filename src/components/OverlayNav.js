@@ -64,10 +64,10 @@ class OverlayNav extends Component {
               }
             </div>
 </div>
- 
     );
   }
 }
+
 const style = StyleSheet.create({
   close : {
     position: 'fixed',
