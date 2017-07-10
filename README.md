@@ -1,6 +1,7 @@
-An instruction walkthrough about data flow in Redux.
+An instructional walkthrough about data flow in an application using Redux.
 
 TODO:
 - Add back/forward buttons in Instructions
 - Correctly display 'Start' or 'X' button on OverlayNav
-- Fixed sizes for different window sizes
+- Responsive
+- Tooltips must be able to display 'code' styled text
