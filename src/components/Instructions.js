@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import '../style.css'
 
 import { Panel } from 'react-bootstrap'
-import Menu from './Menu'
+
 
 class Instructions extends Component {
   constructor(props) {
@@ -11,9 +11,10 @@ class Instructions extends Component {
       this.state = {
         panelOpen: false
       }
-    
   }
+
   render() {
+
    const {
       title,
       children
@@ -37,24 +38,20 @@ class Instructions extends Component {
           </div>
 
           <div className="effect6">
-          <div className="open-steps-panel"
-              onClick={ () =>  { this.setState({ panelOpen: !this.state.panelOpen})} }>
-            Chapter Contents
-          </div>
-          <Panel collapsible expanded={this.state.panelOpen}>
-            <ol>
-              {chapterNav}
-            </ol>
-          </Panel>
+            <div className="open-steps-panel"
+                onClick={ () =>  { this.setState({ panelOpen: !this.state.panelOpen})} }>
+              Chapter Contents
+            </div>
+            <Panel collapsible expanded={this.state.panelOpen}>
+              <ol>
+                {chapterNav}
+              </ol>
+            </Panel>
           </div>
 
           {children}
       
       </div>
-      
-
-      
-
     );
   }
 }

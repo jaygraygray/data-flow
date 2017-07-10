@@ -28,7 +28,7 @@ p {
 font-size: 1.5rem;
 }
 
-em {
+@mixin em {
   font-family: 'Raleway';
   line-height: 32px;
   margin-bottom: 34px;
@@ -38,7 +38,26 @@ em {
   text-decoration: none;
   border-radius: 4px;
     font-size: 1.5rem;
-    padding: 3px;
+padding: 3px;
+}
+
+ac {
+    @include em;
+    background-color: $action-bg-hover;
+}
+
+str {
+    @include em;
+    background-color: $store-bg-hover;
+}
+
+rd {
+    @include em;
+    background-color: $reducer-bg-hover;
+}
+
+em {
+    @include em;
 }
 
 a:hover {
@@ -380,7 +399,7 @@ a:hover {
 }
 
 .store:hover {
-    background: #ff8c8c;
+    background: $store-bg-hover;
     transition: all .3s;
     box-shadow: 0px 3px 7px 3px rgba(0,0,0,0.52);
     border-color: $store-border;

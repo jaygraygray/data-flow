@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Shape from '../components/shape/Shape'
+import Shape from '../components/Shape'
 
 import Instructions from '../components/Instructions'
 import Step from '../components/Step'
@@ -8,9 +8,9 @@ import OverlayNav from '../components/OverlayNav'
 
 import { Link } from 'react-router-dom'
 
-export default class One extends Component {
-  render() {
-    return (
+export default function zero() {
+
+return (
 <div>
 <div className="row">
   <div className="col-sm-4 instructions-container">
@@ -25,8 +25,8 @@ export default class One extends Component {
         </Step>
         <Step title="Redux Terms">
           <p>
-            <em>Actions</em> are the movers and shakers in an app using Redux. Actions are just objects, that at minimum, have two properties: a <em>type</em> and a <em>payload</em>. 
-            The payload is <em>data</em>, and the type is an instruction on <em>how to handle</em> that data.  </p>
+            <span className='ac'>Actions</span> are the movers and shakers in an app using Redux. Actions are just objects, that at minimum, have two properties: a <ac>type</ac> and a <ac>payload</ac>. 
+            The payload is <ac>data</ac>, and the type is an instruction on <ac>how to handle</ac> that data.  </p>
           <p>
             <em>Reducers</em> are the heavy lifters in our app. Reducers are <em>pure functions</em>. That's it. Reducers are functions. Say it with me one more time:
             Reducers Are Just Functions. Reducers accept <em>two parameters</em>: an action object and a state object.
@@ -121,8 +121,6 @@ export default class One extends Component {
         TipStyle={style.tip}
         > Event </Shape>
 
-       
-        
       </div>
     </div>
   </div>
@@ -130,8 +128,13 @@ export default class One extends Component {
 </div>
     );
   }
-}
 
+
+//
+// Positions will change every chapter, so it's best 
+// they're defined in each chapter, rather than
+// in the app-wide style.css
+//
 
 const style = {
   tip : {

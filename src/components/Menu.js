@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+export default function menu() {
 
-
-class Menu extends Component {
-  render() {
     return (
       <div style={style.menuContainer}>
         <ul style={style.listContainer}>
@@ -15,7 +13,7 @@ class Menu extends Component {
       </div>
     );
   }
-}
+
 
 const style = {
   menuContainer: {
@@ -36,5 +34,3 @@ const style = {
     marginRight: '32px',
   }
 }
-
-export default Menu;

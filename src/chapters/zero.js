@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import Shape from '../components/shape/Shape'
-
+import Shape from '../components/Shape'
 import Instructions from '../components/Instructions'
 import Step from '../components/Step'
-
-
 import OverlayNav from '../components/OverlayNav'
 
 export default function zero() {
 
-
-    return (
+return (
 <div>
 
 <div className="row">

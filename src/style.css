@@ -20,6 +20,45 @@ p {
   margin-bottom: 34px;
   font-size: 1.5rem; }
 
+ac {
+  font-family: 'Raleway';
+  line-height: 32px;
+  margin-bottom: 34px;
+  font-size: 2rem;
+  background-color: #44A09D;
+  text-transform: none;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding: 3px;
+  background-color: #f179ff; }
+
+str {
+  font-family: 'Raleway';
+  line-height: 32px;
+  margin-bottom: 34px;
+  font-size: 2rem;
+  background-color: #44A09D;
+  text-transform: none;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding: 3px;
+  background-color: #ff8c8c; }
+
+rd {
+  font-family: 'Raleway';
+  line-height: 32px;
+  margin-bottom: 34px;
+  font-size: 2rem;
+  background-color: #44A09D;
+  text-transform: none;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  padding: 3px;
+  background-color: #6f7eff; }
+
 em {
   font-family: 'Raleway';
   line-height: 32px;

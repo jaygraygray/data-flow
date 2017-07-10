@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 import { Popover, OverlayTrigger } from 'react-bootstrap'
 
-import '../../style.css'
+import '../style.css'
 
 class Shape extends Component {
   
-
-
   render() {
 
     const {
@@ -19,7 +17,6 @@ class Shape extends Component {
       TipStyle,
       placement,
     } = this.props
-console.log(ShapeStyle)
 
     const tooltipText = (
       <Popover
@@ -27,7 +24,10 @@ console.log(ShapeStyle)
               style={TipStyle} 
               id="tooltip" 
               title={title}
-              >{tooltip}</Popover>)
+              >{tooltip}
+      </Popover>
+      )
+
     return (
       <OverlayTrigger placement={placement} 
                       rootClose={true} 

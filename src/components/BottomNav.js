@@ -7,12 +7,13 @@ import { StyleSheet, css } from 'aphrodite'
 class BottomNav extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       panelStatus: false
     }
   }
+
   render() {
+
     const {
       container,
       arrow,
@@ -24,8 +25,7 @@ class BottomNav extends Component {
     return (
       <div className={css(container)}>
           <div className={css(arrow)}
-                onClick={ () => {this.setState({panelStatus: !this.state.panelStatus })}}
-          >&lt;
+                onClick={ () => {this.setState({panelStatus: !this.state.panelStatus }) } }> &lt;
           </div>
           <Panel bsClass="bottonNavPanel" collapsible expanded={this.state.panelStatus}> 
             <div className={css(ulContainer)}
